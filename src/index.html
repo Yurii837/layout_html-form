@@ -1,17 +1,63 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset>
+        <legend>Personal information</legend>
+        <label class="form-field">
+          Surname:
+          <input type="text" name="Surname" autocomplete="off">
+        </label>
+        <label class="form-field">
+          Name:
+          <input type="text" name="Name" autocomplete="off">
+        </label>
+        <label class="form-field">
+          How old are you?
+          <input type="number" name="age" value="12"
+          min="1" max="100">
+        </label>
+        <label class="form-field">
+          Full date of birth:
+          <input type="date" name="Full date of birth" placeholder="mm/dd/yyyy">
+        </label>
+        <label class="form-field">
+          I acsept the term of the agreement
+          <input type="checkbox">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
+        <label class="form-field">
+          E-mail:
+          <input type="email" name="email" placeholder="email@example.com"
+          required>
+        </label>
+        <label class="form-field">
+          Password:
+          <input type="password" name="password">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>An interesting fact about you</legend>
+      </fieldset>
+      <fieldset>
+        <legend>Additional info</legend>
+      </fieldset>
+      <button>Submit</button>
+    </form>
+
   </body>
+
 </html>
